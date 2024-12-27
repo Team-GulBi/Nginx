@@ -7,5 +7,5 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf  # 사용자 정의 NGINX 설정 파일을 마운트
+      - ./nginx.conf:/etc/nginx.conf  # 사용자 정의 NGINX 설정 파일을 마운트
     restart: always
