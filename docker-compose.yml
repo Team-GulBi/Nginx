@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  nginx:
+    build:
+      context: ./
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf  # 사용자 정의 NGINX 설정 파일을 마운트
+    restart: always
